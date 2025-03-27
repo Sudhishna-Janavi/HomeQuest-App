@@ -1,0 +1,123 @@
+.filters-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .filters-modal h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  /* Price Range */
+  .price-range-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .price-range-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .price-slider-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .price-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  
+  .price-slider:hover {
+    opacity: 1;
+  }
+  
+  .price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #5a2c8a;
+    cursor: pointer;
+  }
+  
+  /* Bedrooms & Amenities */
+  .filters-modal label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 12px;
+  }
+  
+  .filters-modal select,
+  .filters-modal input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .amenities-input {
+    max-width: 90%;
+  }
+
+  .bedrooms-input {
+    max-width: 90%;
+  } 
+  
+  /* Buttons */
+  .filters-modal .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .filters-modal button {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .filters-modal button:first-child {
+    background: #5a2c8a;
+    color: white;
+  }
+  
+  .filters-modal button:first-child:hover {
+    background: #4a2377;
+  }
+  
+  .filters-modal button:last-child {
+    background: #ccc;
+    color: black;
+  }
+  
+  .filters-modal button:last-child:hover {
+    background: #bbb;
+  }
+  
+  

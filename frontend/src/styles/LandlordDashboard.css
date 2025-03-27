@@ -1,0 +1,89 @@
+body{
+    
+    overflow-y: visible;
+}
+.landlord-dashboard {
+    background-image: url("/backgroundImg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center child elements */
+    align-items: flex-start;
+    width: 100vw; /* Ensure the container spans full width */
+    padding: 20px;
+    font-family: sans-serif;
+    
+  }
+  
+  .landlord-dashboard__properties,
+  .landlord-dashboard__requests {
+    flex: 1; /* Allow both sections to take equal space */
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center content inside */
+    color:#333
+  }
+  
+  
+  .landlord-dashboard__title {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center the title text */
+    text-decoration: underline; /* Add underline */
+  }
+  
+  .landlord-dashboard__property-actions {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .landlord-dashboard__add-property-btn,
+  .landlord-dashboard__update-details-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .landlord-dashboard__add-property-btn:hover,
+  .landlord-dashboard__update-details-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .landlord-dashboard__see-more-btn,
+  .landlord-dashboard__view-details-btn {
+    background-color: #f0f0f0; /* Light gray button */
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center; /* Center the button within its container */
+  }
+  
+  .landlord-dashboard__see-more-btn:hover,
+  .landlord-dashboard__view-details-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Add styles for PropertyCard and RequestCard components here, if needed */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .landlord-dashboard {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center; /* Center horizontally on smaller screens */
+    }
+  
+    .landlord-dashboard__properties,
+    .landlord-dashboard__requests {
+      width: 95%; /* Take up more width on smaller screens */
+    }
+  }

@@ -1,0 +1,147 @@
+/* General page styling */
+.watchlist-page {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures "My Watchlist" stays left-aligned */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Watchlist heading */
+.watchlist-page h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: left; /* Aligns header to the left */
+  margin-bottom: 20px;
+  margin-left: 0; /* Removes any unnecessary shifting */
+}
+.watchlist-container h2{
+  align-self: flex-start;
+  margin-left: 0;
+  width: 100%;  /* Ensures it spans the full width */
+  text-align: left;
+}
+/* Watchlist container - Holds all items */
+.watchlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-self: flex-start; /* Aligns to the left */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Watchlist items grid */
+.watchlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.noPropPlaceholder{
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 50px;
+}
+
+/* Individual property card */
+.watchlist-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  max-width: 300px;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .watchlist-item {
+    width: calc(50% - 20px); /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .watchlist-item {
+    width: 100%; /* Full width */
+  }
+}
+
+/* Hover effect */
+.watchlist-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Image styling */
+.watchlist-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Info section */
+.watchlist-item .item-info {
+  padding: 15px;
+}
+
+.watchlist-item .item-info h3 {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.watchlist-item .item-info p {
+  font-size: 1rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+.watchlist-item .item-info .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 10px;
+}
+
+/* Remove button */
+.watchlist-item .remove-btn {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watchlist-item .remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Message when no items are present */
+.no-items {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 50px;
+}
+
+/* Reset body margin */
+body {
+  margin: 0;
+  padding: 0;
+}
