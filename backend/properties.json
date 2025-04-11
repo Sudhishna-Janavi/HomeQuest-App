@@ -1,0 +1,17 @@
+[
+    {
+      "address": "101 Jurong Street 42",
+      "price": 350000,
+      "type": "HDB",
+      "status": "AVAILABLE",
+      "landlords": []
+    },
+    {
+      "address": "305 Sengkang West Avenue",
+      "price": 420000,
+      "type": "BTO",
+      "status": "UNDER_REVIEW",
+      "landlords": []
+    }
+  ]
+  
